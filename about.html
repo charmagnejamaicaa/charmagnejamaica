@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Charmagne Jamaica</title>
+    <style>
+       
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            background: #ffffff; 
+            color: #262626; 
+        }
+        
+        nav { 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 1px solid #efefef; 
+            background: white; 
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #666; 
+            font-weight: 600; 
+        }
+        nav a:hover { color: #f03e6d; }
+
+        .container { 
+            max-width: 935px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+
+        header { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 50px; 
+        }
+        
+        .profile-pic-container { 
+            flex: 1; 
+            display: flex; 
+            justify-content: center; 
+        }
+        .profile-pic { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #efefef; 
+            padding: 4px;
+        }
+
+        .profile-info { flex: 2; }
+        
+        .name-row { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+        .username { 
+            font-size: 28px; 
+            font-weight: 300; 
+            margin-right: 20px; 
+        }
+        .theme-btn { 
+            background: #f03e6d; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 6px 15px; 
+            font-weight: 600; 
+            cursor: pointer; 
+        }
+
+        .bio-text { 
+            font-size: 16px; 
+            line-height: 1.6; 
+            text-align: justify; 
+        }
+        .full-name { 
+            display: block; 
+            font-weight: 700; 
+            margin-bottom: 5px; 
+            color: #f03e6d; 
+        }
+
+        .highlights { 
+            display: flex; 
+            gap: 45px; 
+            padding: 20px 0; 
+            border-top: 1px solid #efefef;
+            justify-content: flex-start;
+        }
+        
+        .highlight-item { 
+            text-align: center; 
+            text-decoration: none; 
+            color: #262626;
+            transition: transform 0.2s;
+        }
+        .highlight-item:hover { transform: scale(1.05); }
+
+        .highlight-circle { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            border: 2px solid #dbdbdb; 
+            padding: 3px; 
+            margin-bottom: 8px; 
+            object-fit: cover;
+            display: block;
+        }
+        
+        .highlight-item p { 
+            font-size: 13px; 
+            font-weight: 600; 
+            margin: 0; 
+        }
+
+       
+        @media (max-width: 735px) {
+            header { flex-direction: column; text-align: center; }
+            .profile-pic-container { margin-bottom: 20px; }
+            .highlights { justify-content: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html" style="color: #f03e6d;">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <header>
+            <div class="profile-pic-container">
+                <img src="chaig.jpg" alt="Charmagne" class="profile-pic">
+            </div>
+            
+            <div class="profile-info">
+                <div class="name-row">
+                    <span class="username">charmagnejamaica</span>
+                    <button class="theme-btn">Follow</button>
+                </div>
+                
+                <div class="bio-text">
+                    <span class="full-name">Charmagne Jamaica Marcos</span>
+                    I am a dedicated student currently pursuing Information Technology at University of La Salette, Inc. I have a passion for learning and a keeping interest in technology and innovation.
+                    <br><br>
+                    Outside of my studies, I enjoy staying active and working on personal activities. My goal is to combine my academic knowledge with real-world experiences to make a positive impact.
+                </div>
+            </div>
+        </header>
+
+        <div class="highlights">
+            <a href="uno.html" class="highlight-item">
+                <img src="uno.jpg" class="highlight-circle" alt="My Cat">
+                <p>♡</p>
+            </a>
+             <a href="friends.html" class="highlight-item">
+                <img src="vern.jpg" class="highlight-circle" alt="Friends">
+                <p>♡</p>
+            </a>
+            <a href="myself.html" class="highlight-item">
+                <img src="digicha.jpg" class="highlight-circle" alt="Myself">
+                <p>♡ </p>
+            </a>
+            <a href="myself.html" class="highlight-item">
+                <img src="g6.jpg" class="highlight-circle" alt="Myself">
+                <p>♡</p>
+            </a>
+            <a href="uno.html" class="highlight-item">
+                <img src="uno3.jpg" class="highlight-circle" alt="Myself">
+                <p>♡</p>
+            </a>
+            <a href="friends.html" class="highlight-item">
+                <img src="f8.jpg" class="highlight-circle" alt="Myself">
+                <p>♡</p>
+            </a>
+            <a href="myself.html" class="highlight-item">
+                <img src="m6.jpg" class="highlight-circle" alt="Myself">
+                <p>♡ </p>
+            </a>
+            <a href="uno.html" class="highlight-item">
+                <img src="uno6.jpg" class="highlight-circle" alt="Myself">
+                <p>♡</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | My Portfolio</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #fff; color: #333; line-height: 1.6; }
+        nav { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #666; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #f03e6d; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .highlight { color: #f03e6d; }
+        .btn-start { background: #f03e6d; color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html" style="color: #f03e6d;">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact</a>
+
+        <style>
+    .home-container {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .main-layout {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .description-side { flex: 1; }
+    .feed-side { flex: 1; display: flex; justify-content: center; }
+
+    
+    .greeting { color: #f03e6d; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    h1 { font-size: 3rem; margin: 10px 0; color: #262626; }
+    .bio-text { font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: 30px; }
+
+    .ig-post {
+        width: 100%;
+        max-width: 450px;
+        background: white;
+        border: 1px solid #dbdbdb;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .post-header {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .post-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid #f03e6d;
+    }
+
+    .post-username { font-weight: 600; font-size: 14px; }
+
+    .post-main-img {
+        width: 100%;
+        display: block;
+    }
+
+    .post-footer { padding: 12px; }
+    .icons { font-size: 20px; margin-bottom: 8px; }
+    .likes { font-size: 14px; margin: 5px 0; }
+    .caption { font-size: 14px; line-height: 1.4; }
+
+   
+    .btn-primary {
+        background: #f03e6d;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .btn-primary:hover { opacity: 0.8; transform: translateY(-2px); }
+
+    @media (max-width: 850px) {
+        .main-layout { flex-direction: column; text-align: center; }
+        .feed-side { order: -1; } 
+    }
+</style>
+
+    </nav>
+<div class="home-container">
+    <div class="main-layout">
+        
+        <div class="description-side">
+            <p class="greeting">Get to know me</p>
+            <h1>Charmagne Jamaica Marcos</h1>
+            <p class="bio-text">
+                I am an IT student at <b>University of La Salette, Inc.</b> with a deep interest in innovation. 
+                Beyond the code, I am a storyteller and a leader. Whether I'm serving as a <b>Lector</b>, 
+                hosting events as an <b>Host</b>, or exploring nature through <b>hiking and cave adventures</b>, 
+                I strive to make a positive impact in everything I do.
+            </p>
+            <a href="about.html" class="btn-primary">View Full Profile</a>
+        </div>
+
+        <div class="feed-side">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="chaig.jpg" class="post-avatar" alt="Avatar">
+                    <span class="post-username">charmagnejamaica</span>
+                </div>
+                
+                <div class="post-image-container">
+                    <img src="m9.jpg" class="post-main-img" alt="Graduation Speech">
+                </div>
+
+                <div class="post-footer">
+                    <div class="icons">❤️ 💬 🚀</div>
+                    <p class="likes">Liked by <b>piolopascual</b> and <b>others</b></p>
+                    <p class="caption"><b>charmagnejamaica</b> Leading the way at Commencement. Grateful for the voice to serve!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

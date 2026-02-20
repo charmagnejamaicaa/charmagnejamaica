@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            background: #ffffff; 
+            color: #262626; 
+        }
+        
+        nav { 
+            padding: 15px; 
+            text-align: center; 
+            border-bottom: 1px solid #efefef; 
+            background: white; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a { margin: 0 15px; text-decoration: none; color: #666; font-weight: 600; font-size: 14px; }
+        nav a:hover { color: #f03e6d; }
+
+        .container { 
+            max-width: 935px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+       
+        .highlight-header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #efefef;
+            margin-bottom: 20px;
+        }
+        .highlight-header h1 { 
+            font-size: 24px; 
+            color: #f03e6d; 
+            margin: 0;
+        }
+        .highlight-header p { color: #8e8e8e; font-size: 14px; margin-top: 5px; }
+
+        .photo-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 28px; 
+        }
+
+        .grid-item { 
+            position: relative; 
+            width: 100%; 
+            padding-top: 100%; 
+            overflow: hidden;
+            background-color: #fafafa;
+            border-radius: 4px;
+        }
+
+        .grid-item img { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05); 
+        }
+
+        
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #f03e6d;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 735px) {
+            .photo-grid { gap: 3px; } 
+            .container { padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <a href="about.html" class="back-btn">← Back to Profile</a>
+
+        <div class="highlight-header">
+            <h1>Uno </h1>
+            <p>My favorite moments with my baby</p>
+        </div>
+
+        <div class="photo-grid">
+            <div class="grid-item">
+                <img src="uno1.jpg" alt="Uno the cat">
+            </div>
+            <div class="grid-item">
+                <img src="uno2.jpg" alt="Uno and Me">
+            </div>
+            <div class="grid-item">
+                <img src="uno3.jpg" alt="Cat moments">
+            </div>
+            <div class="grid-item">
+                <img src="uno4.jpg" alt="Uno sleeping">
+            </div>
+            <div class="grid-item">
+                <img src="uno5.jpg" alt="Me and Uno">
+            </div>
+            <div class="grid-item">
+                <img src="uno6.jpg" alt="Uno playing">
+            </div>
+            <div class="grid-item">
+                <img src="uno7.jpg" alt="Uno and I">
+            </div>
+            <div class="grid-item">
+                <img src="uno8.jpg" alt="Uno's cuteness">
+        </div>
+            <div class="grid-item">
+                <img src="uno9.jpg" alt="Uno's adventures">
+            </div>
+    </div>
+
+</body>
+</html>
